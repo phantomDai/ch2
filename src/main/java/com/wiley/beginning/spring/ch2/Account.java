@@ -5,13 +5,21 @@ import java.util.Date;
 /**
  * @author phantom
  */
-public class Acount {
+public class Account {
     private long id;
     private String ownerName;
     private double balance;
     private Date accessTime;
-    public Acount() {}
+    private boolean locked;
+    public Account() {}
 
+    public boolean isLocked() {
+        return locked;
+    }
+
+    public void setLocked(boolean locked) {
+        this.locked = locked;
+    }
 
     public long getId() {
         return id;
